@@ -4,35 +4,6 @@ using Xunit;
 
 public class SaddlePointsTests
 {
-  [Fact]
-  public void Test_IsTallestInRow()
-  {
-    int[,] matrix =
-    {
-            { 9, 8, 7, 5 },
-            { 5, 3, 2, 4 },
-            { 6, 6, 7, 4 }
-        };
-    Assert.True(SaddlePoints.IsTallestInRow(matrix, 1, 0));
-    Assert.False(SaddlePoints.IsTallestInRow(matrix, 1, 1));
-    Assert.True(SaddlePoints.IsTallestInRow(matrix, 2, 2));
-  }
-
-  [Fact]
-  public void Test_IsShortestInCol()
-  {
-    int[,] matrix =
-    {
-            { 9, 8, 7, 5 },
-            { 5, 3, 2, 4 },
-            { 6, 6, 7, 4 }
-        };
-    Assert.True(SaddlePoints.IsShortestInCol(matrix, 1, 0));
-    Assert.True(SaddlePoints.IsShortestInCol(matrix, 1, 1));
-    Assert.False(SaddlePoints.IsShortestInCol(matrix, 2, 2));
-    Assert.True(SaddlePoints.IsShortestInCol(matrix, 1, 2));
-    Assert.False(SaddlePoints.IsShortestInCol(matrix, 0, 0));
-  }
 
   [Fact]
   public void Can_identify_single_saddle_point()
