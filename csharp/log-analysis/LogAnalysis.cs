@@ -17,6 +17,9 @@ public static class LogAnalysis
   }
   // TODO: define the 'Message()' extension method on the `string` type
   public static string Message(this string str) =>
-    (str[(str.IndexOf(':') + 1)..].Trim());
+    (str.SubstringAfter(":").Trim());
   // TODO: define the 'LogLevel()' extension method on the `string` type
+
+  public static string LogLevel(this string str) =>
+    (str.SubstringBetween("[", "]"));
 }
