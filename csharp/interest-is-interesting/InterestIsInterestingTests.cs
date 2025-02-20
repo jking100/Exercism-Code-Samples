@@ -94,35 +94,35 @@ public class InterestIsInterestingTests
     Assert.Equal(3.213f, SavingsAccount.InterestRate(-152964.231m));
   }
 
-  /*
 
   [Fact]
   [Task(2)]
   public void Interest_on_negative_balance()
   {
-      Assert.Equal(-321.3m, SavingsAccount.Interest(-10000.0m));
+    Assert.Equal(-321.3m, SavingsAccount.Interest(-10000.0m));
   }
 
   [Fact]
   [Task(2)]
   public void Interest_on_small_balance()
   {
-      Assert.Equal(2.77775m, SavingsAccount.Interest(555.55m));
+    Assert.Equal(2.77775m, SavingsAccount.Interest(555.55m));
   }
 
   [Fact]
   [Task(2)]
   public void Interest_on_medium_balance()
   {
-      Assert.Equal(81.0498379m, SavingsAccount.Interest(4999.99m));
+    Assert.Equal(81.0498379m, SavingsAccount.Interest(4999.99m));
   }
 
   [Fact]
   [Task(2)]
   public void Interest_on_large_balance()
   {
-      Assert.Equal(856.3698m, SavingsAccount.Interest(34600.80m));
+    Assert.Equal(856.3698m, SavingsAccount.Interest(34600.80m));
   }
+  /*
 
   [Fact]
   [Task(3)]
