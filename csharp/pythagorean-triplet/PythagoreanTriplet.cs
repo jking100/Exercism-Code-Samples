@@ -20,7 +20,7 @@ public static class PythagoreanTriplet
 
         int c;
 
-        for (int a = 1; a <= (sum / 2); a++)
+        for (int a = 1; a <= ((sum / 3) - 1); a++)
         {
             for (int b = a; b < (sum - (a + b)); b++)
             {
