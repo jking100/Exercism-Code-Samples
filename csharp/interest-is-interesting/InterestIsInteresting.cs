@@ -19,12 +19,10 @@ static class SavingsAccount
 
   public static int YearsBeforeDesiredBalance(decimal balance, decimal targetBalance)
   {
-    int count = 0;
-    while (balance <= targetBalance)
+    for (int year = 0; ; year++)
     {
-      count++;
+      if (balance >= targetBalance) return year;
       balance = AnnualBalanceUpdate(balance);
     }
-    return count;
   }
 }
