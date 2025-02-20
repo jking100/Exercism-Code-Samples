@@ -9,14 +9,14 @@ public class TimFromMarketingTests
   {
     Assert.Equal("[17] - Ryder Herbert - MARKETING", Badge.Print(17, "Ryder Herbert", "Marketing"));
   }
-  /*
   [Fact]
   [Task(2)]
   public void Label_for_new_employee()
   {
-      Assert.Equal("Bogdan Rosario - MARKETING", Badge.Print(null, "Bogdan Rosario", "Marketing"));
+    Assert.Equal("Bogdan Rosario - MARKETING", Badge.Print(null, "Bogdan Rosario", "Marketing"));
   }
 
+  /*
   [Fact]
   [Task(3)]
   public void Label_for_owner()
