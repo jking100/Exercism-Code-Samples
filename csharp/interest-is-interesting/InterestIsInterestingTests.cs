@@ -122,57 +122,57 @@ public class InterestIsInterestingTests
   {
     Assert.Equal(856.3698m, SavingsAccount.Interest(34600.80m));
   }
-  /*
 
   [Fact]
   [Task(3)]
   public void Annual_balance_update_for_empty_start_balance()
   {
-      Assert.Equal(0.0000m, SavingsAccount.AnnualBalanceUpdate(0.0m));
+    Assert.Equal(0.0000m, SavingsAccount.AnnualBalanceUpdate(0.0m));
   }
 
   [Fact]
   [Task(3)]
   public void Annual_balance_update_for_small_positive_start_balance()
   {
-      Assert.Equal(0.000001005m, SavingsAccount.AnnualBalanceUpdate(0.000001m));
+    Assert.Equal(0.000001005m, SavingsAccount.AnnualBalanceUpdate(0.000001m));
   }
 
   [Fact]
   [Task(3)]
   public void Annual_balance_update_for_average_positive_start_balance()
   {
-      Assert.Equal(1016.210000m, SavingsAccount.AnnualBalanceUpdate(1_000.0m));
+    Assert.Equal(1016.210000m, SavingsAccount.AnnualBalanceUpdate(1_000.0m));
   }
 
   [Fact]
   [Task(3)]
   public void Annual_balance_update_for_large_positive_start_balance()
   {
-      Assert.Equal(1016.210101621m, SavingsAccount.AnnualBalanceUpdate(1_000.0001m));
+    Assert.Equal(1016.210101621m, SavingsAccount.AnnualBalanceUpdate(1_000.0001m));
   }
 
   [Fact]
   [Task(3)]
   public void Annual_balance_update_for_huge_positive_start_balance()
   {
-      Assert.Equal(920352587.26744292868451875m, SavingsAccount.AnnualBalanceUpdate(898124017.826243404425m));
+    Assert.Equal(920352587.26744292868451875m, SavingsAccount.AnnualBalanceUpdate(898124017.826243404425m));
   }
 
   [Fact]
   [Task(3)]
   public void Annual_balance_update_for_small_negative_start_balance()
   {
-      Assert.Equal(-0.12695199m, SavingsAccount.AnnualBalanceUpdate(-0.123m));
+    Assert.Equal(-0.12695199m, SavingsAccount.AnnualBalanceUpdate(-0.123m));
   }
 
   [Fact]
   [Task(3)]
   public void Annual_balance_update_for_large_negative_start_balance()
   {
-      Assert.Equal(-157878.97174203m, SavingsAccount.AnnualBalanceUpdate(-152964.231m));
+    Assert.Equal(-157878.97174203m, SavingsAccount.AnnualBalanceUpdate(-152964.231m));
   }
 
+  /*
   [Fact]
   [Task(4)]
   public void Years_before_desired_balance_for_small_start_balance()
