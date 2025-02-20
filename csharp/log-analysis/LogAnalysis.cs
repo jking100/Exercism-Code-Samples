@@ -2,6 +2,8 @@ using System;
 
 public static class LogAnalysis
 {
+  static string[] LogLevels = ["INFO", "WARNING", "ERROR"];
+
   // TODO: define the 'SubstringAfter()' extension method on the `string` type
   public static string SubstringAfter(this string str, string delim)
   {
@@ -14,6 +16,7 @@ public static class LogAnalysis
     return str.Split([firstDelim, secondDelim], StringSplitOptions.None)[1];
   }
   // TODO: define the 'Message()' extension method on the `string` type
-
+  public static string Message(this string str) =>
+    (str[(str.IndexOf(':') + 1)..].Trim());
   // TODO: define the 'LogLevel()' extension method on the `string` type
 }
