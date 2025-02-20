@@ -8,8 +8,8 @@ static class Badge
 {
   public static string Print(int? id, string name, string? department)
   {
-
-    return $"{(id is null ? "" : $"[{id}] - ")}{name} - {department?.ToUpper()}";
-    //throw new NotImplementedException("Please implement the (static) Badge.Print() method");
+    string idPart = id is null ? "" : $"[{id}] - ";
+    string deptPart = department?.ToUpper() ?? "OWNER";
+    return $"{idPart}{name} - {deptPart}";
   }
 }

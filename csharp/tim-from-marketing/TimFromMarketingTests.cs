@@ -16,19 +16,19 @@ public class TimFromMarketingTests
     Assert.Equal("Bogdan Rosario - MARKETING", Badge.Print(null, "Bogdan Rosario", "Marketing"));
   }
 
-  /*
   [Fact]
   [Task(3)]
   public void Label_for_owner()
   {
-      Assert.Equal("[59] - Julie Sokato - OWNER", Badge.Print(59, "Julie Sokato", null));
+    Assert.Equal("[59] - Julie Sokato - OWNER", Badge.Print(59, "Julie Sokato", null));
   }
 
   [Fact]
   [Task(3)]
   public void Label_for_new_owner()
   {
-      Assert.Equal("Amare Osei - OWNER", Badge.Print(null, "Amare Osei", null));
+    Assert.Equal("Amare Osei - OWNER", Badge.Print(null, "Amare Osei", null));
   }
+  /*
   */
 }
