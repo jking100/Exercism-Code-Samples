@@ -9,7 +9,10 @@ public static class LogAnalysis
   }
 
   // TODO: define the 'SubstringBetween()' extension method on the `string` type
-
+  public static string SubstringBetween(this string str, string firstDelim, string secondDelim)
+  {
+    return str.Split([firstDelim, secondDelim], StringSplitOptions.None)[1];
+  }
   // TODO: define the 'Message()' extension method on the `string` type
 
   // TODO: define the 'LogLevel()' extension method on the `string` type

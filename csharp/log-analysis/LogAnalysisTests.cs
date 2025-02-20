@@ -17,21 +17,21 @@ public class LogAnalysisTests
   {
     Assert.Equal(" test", "I am the 2nd test".SubstringAfter("2nd"));
   }
-  /*
   [Fact]
   [Task(2)]
   public void SubstringBetween()
   {
-      Assert.Equal("INFO", "[INFO]: File Deleted.".SubstringBetween("[", "]"));
+    Assert.Equal("INFO", "[INFO]: File Deleted.".SubstringBetween("[", "]"));
   }
 
   [Fact]
   [Task(2)]
   public void SubstringBetweenLongerDelimiters()
   {
-      Assert.Equal("SOMETHING", "FIND >>> SOMETHING <===< HERE".SubstringBetween(">>> ", " <===<"));
+    Assert.Equal("SOMETHING", "FIND >>> SOMETHING <===< HERE".SubstringBetween(">>> ", " <===<"));
   }
 
+  /*
   [Fact]
   [Task(3)]
   public void Message()
