@@ -1,0 +1,7 @@
+Helper Commands:
+
+Recursive search to add new downloads to sln:
+	.../Exercism/>
+		Get-ChildItem -Recurse -Filter *.csproj | ForEach-Object { dotnet sln ExercismCSharp.sln add $_.FullName }
+
+	$> dotnet sln ExercismCSharp.sln add *.csproj
